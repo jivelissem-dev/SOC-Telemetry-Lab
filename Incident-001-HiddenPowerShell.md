@@ -8,11 +8,16 @@
 
 ---
 
-### **2. Technical Analysis & Evidence**
-Telemetry gathered from the Sysmon operational log:
-* **Parent Process:** explorer.exe
-* **Spawned Process:** powershell.exe
-* **Full Command Line:** `powershell.exe -WindowStyle Hidden -Command "Write-Output 'SOC-Lab-Test-In-Progress'; Start-Sleep -Seconds 2"`
+## 2. Technical Analysis & Evidence
+
+Telemetry gathered from the Sysmon operational log (Event ID 1):
+
+- **Impacted Host:** WKSTN-FL-042
+- **User Context:** CORP\j.ivelisse
+- **Parent Process:** explorer.exe (PID: 4312)
+- **Spawned Process:** powershell.exe (PID: 8704)
+- **Full Command Line:** `powershell.exe -WindowStyle Hidden -Command "Write-Output 'SOC-Lab-Test-In-Progress'; Start-Sleep -Seconds 2"`
+- **File Hash (SHA256):** `75A4054BE2C12BC9F335CE2BD40733AD0F1E2A4C2E9A6FBB858287F4045FE0A9`
 
 ---
 
